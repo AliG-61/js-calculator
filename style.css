@@ -1,0 +1,42 @@
+:root{
+  --bg:#0f172a;         /* slate-900 */
+  --panel:#111827;      /* gray-900 */
+  --btn:#1f2937;        /* gray-800 */
+  --btn-accent:#2563eb; /* blue-600 */
+  --text:#e5e7eb;       /* gray-200 */
+  --muted:#9ca3af;      /* gray-400 */
+  --danger:#ef4444;     /* red-500 */
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;
+  background:linear-gradient(135deg,#0f172a, #111827);
+  color:var(--text); display:grid; place-items:center; padding:24px;
+}
+.app{width:min(420px,95vw)}
+h1{font-weight:700; letter-spacing:.5px; text-align:center; margin:0 0 16px}
+.calc{
+  background:var(--panel); border-radius:20px; padding:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.display{background:#0b1220; border-radius:14px; padding:12px; margin-bottom:12px}
+.display input{
+  width:100%; border:none; outline:none; background:transparent; color:var(--text);
+  font-size:32px; text-align:right; padding:6px 4px; letter-spacing:.5px;
+}
+.history{height:20px; color:var(--muted); text-align:right; font-size:12px; margin-bottom:4px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+
+.keys{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:10px;
+}
+button{
+  background:var(--btn); color:var(--text); border:none; border-radius:14px;
+  padding:16px; font-size:18px; cursor:pointer; transition:transform .03s ease, opacity .2s;
+}
+button:active{transform:scale(.98)}
+button[data-action="equals"]{background:var(--btn-accent); font-weight:700}
+button[data-action="clear"]{background:var(--danger)}
+button[data-op]{background:#334155} /* slate-700 */
+.span-2{grid-column:span 2}
+footer{margin-top:10px; text-align:center; color:var(--muted); font-size:12px}
