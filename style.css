@@ -1,11 +1,11 @@
 :root{
-  --bg:#0f172a;         /* slate-900 */
-  --panel:#111827;      /* gray-900 */
-  --btn:#1f2937;        /* gray-800 */
-  --btn-accent:#2563eb; /* blue-600 */
-  --text:#e5e7eb;       /* gray-200 */
-  --muted:#9ca3af;      /* gray-400 */
-  --danger:#ef4444;     /* red-500 */
+  --bg:#0f172a;         
+  --panel:#111827;      
+  --btn:#1f2937;        
+  --btn-accent:#2563eb;
+  --text:#e5e7eb;       
+  --muted:#9ca3af;      
+  --danger:#ef4444;    
 }
 *{box-sizing:border-box}
 html,body{height:100%}
